@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: garet;
+  src: url("/fonts/garet.book.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: alex-brush;
+  src: url("/fonts/AlexBrush-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  /* font-family: "Courier New", Courier; */
+}
+
+a {
+  text-decoration: none;
+}
+
+.flex-center {
+  @apply flex justify-center items-center;
+}
+
+.flex-between {
+  @apply flex justify-between items-center;
+}
+
+.flex-evenly {
+  @apply flex justify-evenly items-center;
+}
+
+.flex-end {
+  @apply flex justify-end items-center;
+}
+
+.col-flex {
+  @apply flex flex-col;
+}
+
+.direction-rtl {
+  direction: rtl;
+}
+
+.bg-primary {
+  background-color: #056dae;
+}
+
+.bg-secondary {
+  background-color: #fe4e0e;
+}
+
+.text-primary {
+  color: #056dae;
+}
+
+.text-sec {
+  color: #333;
+}
