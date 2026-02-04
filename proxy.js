@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 
-export async function middleware(request) {
+export async function proxy(request) {
   try {
     const res = await fetch(
       `https://api.ipregistry.co/?key=${process.env.NEXT_PUBLIC_IP_API_KEY}`,
